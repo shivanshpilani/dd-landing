@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { ChevronRightIcon, Link } from "lucide-react";
-import GradualSpacing from "../magicui/gradual-spacing";
+import { ChevronRightIcon } from "lucide-react";
+import Link from "next/link";
 
 const Ticket = () => {
   const [hovered, setHovered] = useState(false);
