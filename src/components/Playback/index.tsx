@@ -4,7 +4,7 @@ import ShinyButton from "../magicui/shiny-button";
 
 export function Playback() {
   return (
-    <div className="flex flex-col w-full items-center mt-[-100px]">
+    <div className="flex flex-col w-full items-center mt-[-100px] mb-20">
       <Link href="https://bitsconquest.zohobackstage.in/ConquestDemoDay2024#/tickets?lang=en" target="_blank">
         <div className="mt-[-50px] mb-20 md:mt-[-100px]">
           <ShinyButton text="Get Tickets" />

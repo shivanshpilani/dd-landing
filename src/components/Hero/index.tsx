@@ -27,7 +27,7 @@ const Hero = () => {
         DEMO DAY
       </span>
       <h2 className="mt-6 text-neutral-400 font-regular text-xl">
-        11th August 2024 | Banglore
+        11th August 2024 | Bangalore
       </h2>
       {/* <BlurIn
         word="DEMO DAY"
