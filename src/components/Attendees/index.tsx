@@ -32,7 +32,7 @@ const Attendees = () => {
           <p className="text-black text-base md:text-lg uppercase">VC Firms</p>
         </div>
       </div>
-      {/* <MarqueeDemo /> */}
+      <MarqueeDemo />
     </div>
   );
 };
