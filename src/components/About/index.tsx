@@ -5,7 +5,7 @@ import AnimatedShinyText from "../magicui/animated-shiny-text";
 import cn from "classnames";
 import BlurFade from "../magicui/blur-fade";
 
-import ddcollage from "../../../public/images/ddcollage.svg";
+import ddcollage from "../../../public/images/ddcollage.png";
 
 export function About() {
   return (
@@ -25,7 +25,9 @@ export function About() {
         </p>
         <div className="w-full flex mt-12 justify-between items-center">
           <div className="w-1/2">
+            <BlurFade delay={0.25} inView>
             <Image src={ddcollage} alt="Demo Day Collage" />
+            </BlurFade>
           </div>
           <div className="w-2/5 flex flex-col gap-6">
             <p className="font-regular text-xl">
