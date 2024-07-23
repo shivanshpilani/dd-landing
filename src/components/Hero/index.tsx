@@ -5,7 +5,6 @@ import { useTheme } from "next-themes";
 import Image from "next/image";
 
 import Particles from "@/components/magicui/particles";
-import ShimmerButton from "../magicui/shimmer-button";
 
 import ilu from "../../../public/images/ILU.svg";
 import { AnimatedSubscribeButton } from "../magicui/animated-subscribe-button";
