@@ -8,6 +8,9 @@ import Particles from "@/components/magicui/particles";
 import ShimmerButton from "../magicui/shimmer-button";
 
 import ilu from "../../../public/images/ILU.svg";
+import { AnimatedSubscribeButton } from "../magicui/animated-subscribe-button";
+import { CheckIcon, ChevronRightIcon } from "@radix-ui/react-icons";
+import ShinyButton from "../magicui/shiny-button";
 
 const Hero = () => {
   const { theme } = useTheme();
@@ -18,21 +21,26 @@ const Hero = () => {
   }, [theme]);
 
   return (
-    <div className="relative flex h-[600px] w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background">
+    <div className="relative flex h-[700px] w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background">
       <Image src={ilu} alt="" className="mb-6"></Image>
       <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b to-gray-950 from-white bg-clip-text text-center text-8xl font-bold leading-none text-transparent dark:from-white dark:to-slate-900/10">
         DEMO DAY
       </span>
-      <h2 className="mt-4 text-neutral-400 font-medium text-xl">11th Augutst 2024 | Banglore</h2>
+      <h2 className="mt-6 text-neutral-400 font-regular text-xl">
+        11th August 2024 | Banglore
+      </h2>
       {/* <BlurIn
         word="DEMO DAY"
         className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-8xl font-bold leading-none text-transparent dark:from-white dark:to-slate-900/10"
       /> */}
-      <ShimmerButton className="shadow-2xl w-[200px] mt-16">
+      {/* <ShimmerButton className="shadow-2xl w-[200px] mt-16">
         <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-neutral-300 dark:from-white dark:to-slate-900/10 lg:text-lg">
           Get Tickets
         </span>
-      </ShimmerButton>
+      </ShimmerButton> */}
+      <div className="mt-12">
+        <ShinyButton text="Get Tickets" />
+      </div>
       <Particles
         className="absolute inset-0"
         quantity={100}
