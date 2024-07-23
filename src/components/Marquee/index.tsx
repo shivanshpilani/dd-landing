@@ -31,7 +31,7 @@ const reviews = [
     img: "https://bsmedia.business-standard.com/_media/bs/img/article/2022-12/15/full/1671105361-1397.jpg?im=FeatureCrop,size=(826,465)",
   },
   {
-    img: "https://mma.prnewswire.com/media/1596971/3one4_Capital_Logo.jpg",
+    img: "https://www.vcbay.news/wp-content/uploads/2022/04/Logo-640x276.png",
   },
 ];
 
@@ -54,7 +54,7 @@ const ReviewCard = ({
   
   export function MarqueeDemo() {
     return (
-      <div className="relative flex h-[350px] w-full flex-col items-center justify-center overflow-hidden rounded-lg  bg-white md:shadow-xl">
+      <div className="relative flex h-[350px] w-full flex-col items-center justify-center overflow-hidden rounded-lg  bg-white">
         <Marquee pauseOnHover className="[--duration:20s]">
           {firstRow.map((review) => (
             <ReviewCard {...review} />

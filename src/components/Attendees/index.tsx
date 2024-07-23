@@ -5,7 +5,7 @@ import { MarqueeDemo } from "../Marquee";
 
 const Attendees = () => {
   return (
-    <div className="w-full bg-white flex flex-col items-center pt-20">
+    <div className="w-full bg-white flex flex-col items-center pt-20 pb-10">
       <div
         className={cn(
           "group rounded-full border border-black/5 bg-neutral-100 text-base text-white transition-all ease-in  dark:border-white/5 dark:bg-neutral-900"
@@ -33,6 +33,7 @@ const Attendees = () => {
         </div>
       </div>
       <MarqueeDemo />
+      
     </div>
   );
 };
