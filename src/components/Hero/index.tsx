@@ -10,6 +10,7 @@ import ilu from "../../../public/images/ILU.svg";
 import { AnimatedSubscribeButton } from "../magicui/animated-subscribe-button";
 import { CheckIcon, ChevronRightIcon } from "@radix-ui/react-icons";
 import ShinyButton from "../magicui/shiny-button";
+import Link from "next/link";
 
 const Hero = () => {
   const { theme } = useTheme();
@@ -37,9 +38,6 @@ const Hero = () => {
           Get Tickets
         </span>
       </ShimmerButton> */}
-      <div className="mt-12">
-        <ShinyButton text="Get Tickets" />
-      </div>
       <Particles
         className="absolute inset-0"
         quantity={100}

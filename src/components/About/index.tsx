@@ -31,16 +31,16 @@ export function About() {
           </div>
           <div className="w-full flex flex-col gap-6 mt-6 md:w-2/5 md:mt-0">
             <p className="font-regular text-xl">
-              The Demo Day will be a Shark Tank-style pitching event: the top 13
-              startups of the Conquest ‘23 cohort, selected through a rigorous
+              The Demo Day will be a <span className="text-[#FB723D]">Shark Tank-style pitching event:</span> the top 14
+              startups of the Conquest ‘24 cohort, selected through a rigorous
               process from a pool of 2200+ applicants pan-India, will showcase
               their innovative ideas to a jury comprising leading investors and
-              compete for an equity-less cash grant of over ₹30 lakhs.
+              compete for an <span className="text-[#FB723D]">equity-less cash grant of over ₹30 lakhs.</span>
             </p>
             <p className="font-regular text-xl">
               ​The startups pitching at the Demo Day get a chance to join the
-              likes of prominent startups such as Trell, BiteSpeed, Thinkerbell
-              Labs (featured in Shark Tank), SocialCops (now Atlan), and other
+              likes of prominent startups such as <span className="text-[#FB723D]">Trell</span>, <span className="text-[#FB723D]">BiteSpeed</span>, <span className="text-[#FB723D]">Thinkerbell
+              Labs</span> (featured in Shark Tank), <span className="text-[#FB723D]">SocialCops</span> (now Atlan), and other
               Conquest alumni.
             </p>
             <p className="font-regular text-xl">
