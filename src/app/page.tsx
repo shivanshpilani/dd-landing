@@ -1,4 +1,5 @@
 import { About } from "@/components/About";
+import Attendees from "@/components/Attendees";
 import Hero from "@/components/Hero";
 import { Playback } from "@/components/Playback";
 
@@ -8,6 +9,7 @@ export default function Home() {
     <Hero />
     <Playback />
     <About />
+    <Attendees />
     </>
   );
 }

@@ -17,19 +17,19 @@ export function About() {
           )}
         >
           <AnimatedShinyText className="inline-flex items-center justify-center px-4 py-1 transition ease-out">
-            <span>ABOUT THE EVENT</span>
+            <span className="text-xs md:text-base">ABOUT THE EVENT</span>
           </AnimatedShinyText>
         </div>
-        <p className="inline-block font-medium text-5xl mt-8 text-neutral-200">
+        <p className="inline-block font-medium text-2xl mt-8 text-neutral-200 md:text-5xl">
           What is The Demo Day?
         </p>
-        <div className="w-full flex mt-12 justify-between items-center">
-          <div className="w-1/2">
+        <div className="w-full flex flex-col mt-12 justify-between items-center md:flex-row">
+          <div className="w-full md:w-1/2">
             <BlurFade delay={0.25} inView>
             <Image src={ddcollage} alt="Demo Day Collage" />
             </BlurFade>
           </div>
-          <div className="w-2/5 flex flex-col gap-6">
+          <div className="w-full flex flex-col gap-6 mt-6 md:w-2/5 md:mt-0">
             <p className="font-regular text-xl">
               The Demo Day will be a Shark Tank-style pitching event: the top 13
               startups of the Conquest ‘23 cohort, selected through a rigorous
@@ -54,7 +54,7 @@ export function About() {
       <VelocityScroll
         text="DEMO DAY '24"
         default_velocity={5}
-        className="font-display text-center text-8xl font-bold tracking-[-0.02em] text-black bg-white drop-shadow-sm dark:text-white md:leading-[5rem] p-10"
+        className="font-display text-center text-8xl font-medium tracking-[-0.02em] text-black bg-white drop-shadow-sm dark:text-white md:leading-[5rem] p-10 mt-6"
       />
     </div>
   );
