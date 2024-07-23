@@ -1,14 +1,15 @@
 "use client";
 
 import { useState } from "react";
-import { ChevronRightIcon } from "lucide-react";
+import { ChevronRightIcon, Link } from "lucide-react";
 import GradualSpacing from "../magicui/gradual-spacing";
 
 const Ticket = () => {
   const [hovered, setHovered] = useState(false);
 
   return (
-    <div
+    <Link href="https://bitsconquest.zohobackstage.in/ConquestDemoDay2024#/tickets?lang=en" target="_blank">
+     <div
       className="h-[200px] bg-[#111213] flex items-center justify-center"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
@@ -20,6 +21,7 @@ const Ticket = () => {
         }`}
       />
     </div>
+    </Link>
   );
 };
 
