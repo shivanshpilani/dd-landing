@@ -11,21 +11,21 @@ import ddcollagemobile from "../../../public/images/ddcollage2.png";
 export function About() {
   return (
     <div className="w-full flex flex-col gap-20 bg-white">
-      <div className="mt-10 w-5/6 m-auto flex flex-col items-center">
+      <div className="mt-20 w-5/6 m-auto flex flex-col items-center">
         <div
           className={cn(
             "group rounded-full border border-black/5 bg-neutral-100 text-base text-white transition-all ease-in  dark:border-white/5 dark:bg-neutral-900"
           )}
         >
           <AnimatedShinyText className="inline-flex items-center justify-center px-4 py-1 transition ease-out">
-            <span className="text-xs md:text-base">ABOUT THE EVENT</span>
+            <span className="text-xs md:text-base uppercase">A mini Shark Tank episode, only better!</span>
           </AnimatedShinyText>
         </div>
         <p className="inline-block font-medium text-2xl mt-8 text-[#111213] md:text-5xl">
           What is The Demo Day?
         </p>
-        <p className="font-regular text-gray-400 text-xl text-center mt-6">
-          A mini Shark Tank episode, only better!
+        <p className="font-regular text-gray-400 text-lg md:text-xl text-center mt-4 md:mt-6">
+          The most promising 14 early-stage startups pitch to India's top VCs and Angels <br className="hidden md:block" /> to grab an equity-less cash grant worth over 30 lakh rupees.
         </p>
         <div className="w-full mt-10 hidden md:block">
           <BlurFade delay={0.5} inView>
@@ -77,7 +77,7 @@ export function About() {
       <VelocityScroll
         text="DEMO DAY '24"
         default_velocity={5}
-        className="font-display text-center text-8xl font-medium tracking-[-0.02em] text-neutral-100 bg-[#111213] drop-shadow-sm dark:text-white md:leading-[5rem] p-10 mt-6"
+        className="font-display text-center text-4xl md:text-8xl font-medium tracking-[-0.02em] text-neutral-100 bg-[#111213] drop-shadow-sm dark:text-white md:leading-[5rem] p-10 mt-6"
       />
     </div>
   );

@@ -21,7 +21,7 @@ const Hero = () => {
   }, [theme]);
 
   return (
-    <div className="relative flex h-[700px] w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background">
+    <div className="relative flex h-[700px] w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-[#111213]">
       <Image src={ilu} alt="" className="mb-6"></Image>
       <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b to-gray-950 from-white bg-clip-text text-center text-8xl font-bold leading-none text-transparent dark:from-white dark:to-slate-900/10">
         DEMO DAY

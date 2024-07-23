@@ -1,5 +1,7 @@
 import AnimatedShinyText from "../magicui/animated-shiny-text";
 import cn from "classnames";
+import NumberTicker from "../magicui/number-ticker";
+import { MarqueeDemo } from "../Marquee";
 
 const Attendees = () => {
   return (
@@ -18,18 +20,19 @@ const Attendees = () => {
       </p>
       <div className="flex flex-col w-5/6 gap-10 justify-center items-center md:flex-row mt-10 mb-10">
         <div className="flex flex-col items-center py-10 w-5/6 md:w-[400px] gap-4 border-2 border-[#FFF6EF] rounded-xl">
-          <p className="text-[#FB723D] font-medium text-6xl">10+</p>
-          <p className="text-black text-lg uppercase">Media Houses</p>
+          <p className="text-[#FB723D] font-medium text-4xl md:text-6xl"><NumberTicker className="text-[#FB723D] tracking-tighter" value={10} />+</p>
+          <p className="text-black text-base md:text-lg uppercase">Media Houses</p>
         </div>
         <div className="flex flex-col items-center py-10 w-5/6 md:w-[400px] gap-4 border-2 border-[#FFF6EF] rounded-xl">
-          <p className="text-[#FB723D] font-medium text-6xl">15+</p>
-          <p className="text-black text-lg uppercase">Unicorn Founders</p>
+          <p className="text-[#FB723D] font-medium text-4xl md:text-6xl"><NumberTicker className="text-[#FB723D] tracking-tighter" value={15} />+</p>
+          <p className="text-black text-base md:text-lg uppercase">Unicorn Founders</p>
         </div>
         <div className="flex flex-col items-center py-10 w-5/6 md:w-[400px] gap-4 border-2 border-[#FFF6EF] rounded-xl">
-          <p className="text-[#FB723D] font-medium text-6xl">30+</p>
-          <p className="text-black text-lg uppercase">VC Firms</p>
+          <p className="text-[#FB723D] font-medium text-4xl md:text-6xl"><NumberTicker className="text-[#FB723D] tracking-tighter" value={30} />+</p>
+          <p className="text-black text-base md:text-lg uppercase">VC Firms</p>
         </div>
       </div>
+      {/* <MarqueeDemo /> */}
     </div>
   );
 };
