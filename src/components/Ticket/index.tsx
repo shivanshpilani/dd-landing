@@ -10,7 +10,7 @@ const Ticket = () => {
   return (
     <Link href="https://bitsconquest.zohobackstage.in/ConquestDemoDay2024#/tickets?lang=en" target="_blank">
      <div
-      className="h-[200px] bg-[#111213] flex items-center justify-center"
+      className="h-full bg-[#111213] flex items-center justify-center md:h-[200px]"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
