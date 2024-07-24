@@ -59,14 +59,14 @@ const AttendeeForm: React.FC = () => {
       <VelocityScroll
         text="DEMO DAY '24"
         default_velocity={5}
-        className="font-display text-center text-4xl md:text-8xl font-medium tracking-[-0.02em] text-neutral-100 bg-[#111213] dark:text-white md:leading-[5rem] p-10"
+        className="font-display text-center text-4xl md:text-6xl font-medium tracking-[-0.02em] text-neutral-100 bg-[#111213] dark:text-white md:leading-[5rem] p-4"
       />
       <div className="w-full flex justify-center items-start bg-gray-100 gap-24 p-20">
         <div className="w-4/6 flex bg-white rounded-xl">
           <Form {...form}>
             <form
               onSubmit={form.handleSubmit(onSubmit)}
-              className="space-y-8 w-5/6 m-auto mt-16 mb-20"
+              className="space-y-8 w-5/6 m-auto mt-16 mb-12"
             >
               <div>
                 <h2 className="text-4xl font-semibold text-black">
@@ -79,7 +79,7 @@ const AttendeeForm: React.FC = () => {
                     render={({ field }) => (
                       <FormItem>
                         <FormLabel className="text-black">
-                          First Name *
+                          First Name <span className="text-red-700">*</span>
                         </FormLabel>
                         <FormControl>
                           <Input
@@ -114,7 +114,7 @@ const AttendeeForm: React.FC = () => {
                     name="email"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel className="text-black">Email *</FormLabel>
+                        <FormLabel className="text-black">Email <span className="text-red-700">*</span></FormLabel>
                         <FormControl>
                           <Input
                             type="email"
@@ -150,7 +150,7 @@ const AttendeeForm: React.FC = () => {
                     render={({ field }) => (
                       <FormItem>
                         <FormLabel className="text-black">
-                          Company Name *
+                          Company Name <span className="text-red-700">*</span>
                         </FormLabel>
                         <FormControl>
                           <Input
@@ -169,7 +169,7 @@ const AttendeeForm: React.FC = () => {
                     render={({ field }) => (
                       <FormItem>
                         <FormLabel className="text-black">
-                          Designation *
+                          Designation <span className="text-red-700">*</span>
                         </FormLabel>
                         <FormControl>
                           <Input
@@ -204,10 +204,10 @@ const AttendeeForm: React.FC = () => {
                 </div>
               </div>
               <Button
-              className="rounded-[8px] bg-[#111213] h-[75px] text-neutral-100 hover:text-[#FB723D] text-xl uppercase mt-32"
+              className="rounded-[8px] bg-[#111213] h-[50px] text-neutral-100 hover:text-[#FB723D] text-lg uppercase"
               type="submit"
             >
-              Submit
+              apply for invite
             </Button>
             </form>
           </Form>
@@ -215,12 +215,12 @@ const AttendeeForm: React.FC = () => {
         <div className="w-2/6 h-screen">
           <div className="flex flex-col justify-between">
             <div className="w-full h-[400px] bg-gray-300 rounded-2xl p-4">
-              <div className="w-full h-1/4 flex justify-between p-4 items-center bg-gray-200 rounded-xl">
+              <div className="w-full h-1/4 flex justify-between p-4 items-center rounded-xl">
                 <p className="text-black font-semibold text-xl text-left">
                   Ticket X1
                 </p>
                 <p className="text-black font-semibold text-xl text-right">
-                  ₹2000
+                  ₹2,000
                 </p>
               </div>
               <div className="w-full h-1/4 flex justify-between p-4 items-center">
@@ -228,7 +228,7 @@ const AttendeeForm: React.FC = () => {
                   Subtotal
                 </p>
                 <p className="text-gray-500 font-semibold text-xl text-right">
-                  ₹2000
+                  ₹2,000
                 </p>
               </div>
               <div className="w-full h-1/4 flex justify-between p-4 items-center">
@@ -237,6 +237,14 @@ const AttendeeForm: React.FC = () => {
                 </p>
                 <p className="text-gray-500 font-semibold text-xl text-right">
                   ₹360
+                </p>
+              </div>
+              <div className="w-full h-1/4 flex justify-between p-4 items-center bg-black rounded-xl">
+                <p className="text-white font-semibold text-xl text-left">
+                  TOTAL
+                </p>
+                <p className="text-white font-semibold text-xl text-right">
+                  ₹2,360
                 </p>
               </div>
             </div>
