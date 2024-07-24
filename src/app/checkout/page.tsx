@@ -114,7 +114,9 @@ const AttendeeForm: React.FC = () => {
                     name="email"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel className="text-black">Email <span className="text-red-700">*</span></FormLabel>
+                        <FormLabel className="text-black">
+                          Email <span className="text-red-700">*</span>
+                        </FormLabel>
                         <FormControl>
                           <Input
                             type="email"
@@ -204,11 +206,11 @@ const AttendeeForm: React.FC = () => {
                 </div>
               </div>
               <Button
-              className="rounded-[8px] bg-[#111213] h-[50px] text-neutral-100 hover:text-[#FB723D] text-lg uppercase"
-              type="submit"
-            >
-              apply for invite
-            </Button>
+                className="rounded-[8px] bg-[#111213] h-[50px] w-full text-neutral-100 hover:text-[#FB723D] text-lg uppercase"
+                type="submit"
+              >
+                apply for invite
+              </Button>
             </form>
           </Form>
         </div>
