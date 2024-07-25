@@ -49,9 +49,26 @@ const AttendeeForm: React.FC = () => {
     },
   });
 
-  const onSubmit = (data: FormValues) => {
-    console.log(data);
-    // Handle form submission
+  const onSubmit = async (data: FormValues) => {
+    console.log("Form submitted:", data);
+    try {
+      const response = await fetch('/api/submit-form', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+      
+      if (response.ok) {
+        alert('Form data successfully added to Google Sheet!');
+      } else {
+        alert('Failed to add data to Google Sheet. Please try again.');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert('An error occurred. Please try again.');
+    }
   };
 
   return (
@@ -61,8 +78,8 @@ const AttendeeForm: React.FC = () => {
         default_velocity={5}
         className="font-display text-center text-4xl md:text-6xl font-medium tracking-[-0.02em] text-neutral-100 bg-[#111213] dark:text-white md:leading-[5rem] p-4"
       />
-      <div className="w-full flex justify-center items-start bg-gray-100 gap-24 p-20">
-        <div className="w-4/6 flex bg-white rounded-xl">
+      <div className="w-full flex flex-col justify-center items-start bg-gray-100 gap-8 md:gap-24 p-8 md:p-20 md:flex-row">
+        <div className="w-full md:w-4/6 flex bg-white rounded-xl">
           <Form {...form}>
             <form
               onSubmit={form.handleSubmit(onSubmit)}
@@ -214,7 +231,7 @@ const AttendeeForm: React.FC = () => {
             </form>
           </Form>
         </div>
-        <div className="w-2/6 h-screen">
+        <div className="w-full md:w-2/6 h-screen">
           <div className="flex flex-col justify-between">
             <div className="w-full h-[400px] bg-gray-300 rounded-2xl p-4">
               <div className="w-full h-1/4 flex justify-between p-4 items-center rounded-xl">
