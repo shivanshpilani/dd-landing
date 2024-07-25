@@ -52,7 +52,7 @@ const AttendeeForm: React.FC = () => {
   const onSubmit = async (data: FormValues) => {
     console.log("Form submitted:", data);
     try {
-      const response = await fetch('/api/submit-form', {
+      const response = await fetch('https://demoday.conquest.org.in/api/submit-form', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
