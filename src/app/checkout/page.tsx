@@ -23,7 +23,7 @@ const formSchema = z.object({
   email: z.string().email({ message: "Invalid email address" }),
   phone: z
     .string()
-    .regex(/^[6-9]\d{9}$/, { message: "Invalid Indian phone number" })
+    .regex(/^[6-9]\d{9}$/, { message: "Invalid phone number" })
     .optional(),
   companyName: z.string().min(1, { message: "Company name is required" }),
   designation: z.string().min(1, { message: "Designation is required" }),
@@ -61,9 +61,9 @@ const AttendeeForm: React.FC = () => {
       });
       
       if (response.ok) {
-        alert('Form data successfully added to Google Sheet!');
+        window.location.href = '/thankyou';
       } else {
-        alert('Failed to add data to Google Sheet. Please try again.');
+        alert('Please try again.');
       }
     } catch (error) {
       console.error('Error submitting form:', error);
@@ -231,43 +231,41 @@ const AttendeeForm: React.FC = () => {
             </form>
           </Form>
         </div>
-        <div className="w-full md:w-2/6 h-screen">
-          <div className="flex flex-col justify-between">
-            <div className="w-full h-[400px] bg-gray-300 rounded-2xl p-4">
+        <div className="w-full md:w-2/6">
+            <div className="w-full h-[200px] md:h-[400px] bg-gray-300 rounded-2xl p-4">
               <div className="w-full h-1/4 flex justify-between p-4 items-center rounded-xl">
-                <p className="text-black font-semibold text-xl text-left">
+                <p className="text-black font-semibold text-lg md:text-xl text-left">
                   Ticket X1
                 </p>
-                <p className="text-black font-semibold text-xl text-right">
+                <p className="text-black font-semibold text-lg md:text-xl text-right">
                   ₹2,000
                 </p>
               </div>
               <div className="w-full h-1/4 flex justify-between p-4 items-center">
-                <p className="text-gray-500 font-semibold text-xl text-left">
+                <p className="text-gray-500 font-semibold text-lg md:text-xl text-left">
                   Subtotal
                 </p>
-                <p className="text-gray-500 font-semibold text-xl text-right">
+                <p className="text-gray-500 font-semibold text-lg md:text-xl text-right">
                   ₹2,000
                 </p>
               </div>
               <div className="w-full h-1/4 flex justify-between p-4 items-center">
-                <p className="text-gray-500 font-semibold text-xl text-left">
+                <p className="text-gray-500 font-semibold text-lg md:text-xl text-left">
                   GST
                 </p>
-                <p className="text-gray-500 font-semibold text-xl text-right">
+                <p className="text-gray-500 font-semibold text-lg md:text-xl text-right">
                   ₹360
                 </p>
               </div>
               <div className="w-full h-1/4 flex justify-between p-4 items-center bg-black rounded-xl">
-                <p className="text-white font-semibold text-xl text-left">
+                <p className="text-white font-semibold text-lg md:text-xl text-left">
                   TOTAL
                 </p>
-                <p className="text-white font-semibold text-xl text-right">
+                <p className="text-white font-semibold text-lg md:text-xl text-right">
                   ₹2,360
                 </p>
               </div>
             </div>
-          </div>
         </div>
       </div>
     </div>
