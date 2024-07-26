@@ -33,7 +33,6 @@ const Attendees = () => {
         </div>
       </div>
       <MarqueeDemo />
-      
     </div>
   );
 };
