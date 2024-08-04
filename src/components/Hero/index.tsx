@@ -6,7 +6,7 @@ import Image from "next/image";
 
 import Particles from "@/components/magicui/particles";
 
-import ilu from "../../../public/images/ILU.svg";
+import ilu from "../../../public/images/ILU.png";
 import { AnimatedSubscribeButton } from "../magicui/animated-subscribe-button";
 import { CheckIcon, ChevronRightIcon } from "@radix-ui/react-icons";
 import ShinyButton from "../magicui/shiny-button";
@@ -22,7 +22,7 @@ const Hero = () => {
 
   return (
     <div className="relative flex h-[700px] w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-[#111213]">
-      <Image src={ilu} alt="" className="mb-6"></Image>
+      <Image src={ilu} alt="" className="mb-6 w-48 md:w-72"></Image>
       <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b to-gray-950 from-white bg-clip-text text-center text-8xl font-bold leading-none text-transparent dark:from-white dark:to-slate-900/10">
         DEMO DAY
       </span>
