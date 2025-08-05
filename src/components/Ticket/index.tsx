@@ -14,7 +14,7 @@ const Ticket = () => {
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
-      <p className="text-6xl md:text-8xl">SIGN UP NOW</p>
+             <p className="text-6xl md:text-8xl">REGISTER NOW</p>
       <ChevronRightIcon
         className={`ml-1 h-24 w-24 transition-transform duration-300 ${
           hovered ? "translate-x-4" : ""
