@@ -23,11 +23,11 @@ const Hero = () => {
   return (
     <div className="relative flex h-[700px] w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-[#111213]">
       <Image src={ilu} alt="" className="mb-6 w-64 md:w-[20rem]"></Image>
-      <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b to-gray-950 from-white bg-clip-text text-center text-8xl font-bold leading-none text-transparent dark:from-white dark:to-slate-900/10">
+      <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b to-gray-950 from-white bg-clip-text text-center text-8xl font-bold leading-none text-transparent dark:from-white dark:to-slate-900/10" style={{ fontFamily: 'Geller, sans-serif' }}>
         DEMO DAY
       </span>
       <h2 className="mt-6 text-neutral-400 font-regular text-xl">
-        11th August 2024 | Bangalore
+        10th August 2025 | Bangalore
       </h2>
       {/* <BlurIn
         word="DEMO DAY"

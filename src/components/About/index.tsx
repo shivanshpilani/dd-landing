@@ -5,6 +5,7 @@ import AnimatedShinyText from "../magicui/animated-shiny-text";
 import cn from "classnames";
 import BlurFade from "../magicui/blur-fade";
 
+// Import images with proper type declarations
 import ddcollage from "../../../public/images/ddcollage3.png";
 import ddcollagemobile from "../../../public/images/ddcollage2.png";
 
@@ -49,7 +50,7 @@ export function About() {
               <span className="text-[#FB723D]">
                 Shark Tank-style pitching event:
               </span>{" "}
-              the top 14 startups of the Conquest ‘24 cohort, selected through a
+              the top 14 startups of the Conquest '24 cohort, selected through a
               rigorous process from a pool of 2200+ applicants pan-India, will
               showcase their innovative ideas to a jury comprising leading
               investors and compete for an{" "}
@@ -75,7 +76,7 @@ export function About() {
         </div> */}
       </div>
       <VelocityScroll
-        text="DEMO DAY '24"
+        text="DEMO DAY '25"
         default_velocity={5}
         className="font-display text-center text-4xl md:text-8xl font-medium tracking-[-0.02em] text-neutral-100 bg-[#111213] drop-shadow-sm dark:text-white md:leading-[5rem] p-10 mt-6"
       />
