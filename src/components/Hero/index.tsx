@@ -6,7 +6,7 @@ import Image from "next/image";
 
 import Particles from "@/components/magicui/particles";
 
-import ilu from "../../../public/images/ILU.png";
+import conquest from "../../../public/images/Conquest-ILU.png";
 import { AnimatedSubscribeButton } from "../magicui/animated-subscribe-button";
 import { CheckIcon, ChevronRightIcon } from "@radix-ui/react-icons";
 import ShinyButton from "../magicui/shiny-button";
@@ -22,8 +22,8 @@ const Hero = () => {
 
   return (
     <div className="relative flex h-[700px] w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-[#111213]">
-      <Image src={ilu} alt="" className="mb-6 w-64 md:w-[20rem]"></Image>
-      <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b to-gray-950 from-white bg-clip-text text-center text-8xl font-bold leading-none text-transparent dark:from-white dark:to-slate-900/10" style={{ fontFamily: 'Geller, sans-serif' }}>
+      <Image src={conquest} alt="Conquest Logo" className="mb-6 w-48 md:w-[16rem]"></Image>
+      <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-white to-gray-500 bg-clip-text text-center text-8xl font-bold leading-none text-transparent" style={{ fontFamily: 'Geller, sans-serif' }}>
         DEMO DAY
       </span>
       <h2 className="mt-6 text-neutral-400 font-regular text-xl">

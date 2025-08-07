@@ -23,27 +23,33 @@ const animationProps = {
   },
 } as AnimationProps;
 
-const ShinyButton = ({ text = "shiny-button" }) => {
+const ShinyButton = ({ text = "shiny-button", color = "#FB723D" }) => {
   return (
     <motion.button
       {...animationProps}
-      className="relative rounded-xl px-6 py-2 font-medium backdrop-blur-xl transition-[box-shadow] duration-300 ease-in-out hover:shadow dark:bg-[radial-gradient(circle_at_50%_0%,hsl(var(--primary)/10%)_0%,transparent_60%)] dark:hover:shadow-[0_0_20px_hsl(var(--primary)/10%)]"
+      className="relative rounded-xl px-6 py-2 font-medium backdrop-blur-xl transition-[box-shadow] duration-300 ease-in-out hover:shadow"
+      style={{
+        background: `radial-gradient(circle at 50% 0%, ${color}20 0%, transparent 60%)`,
+        boxShadow: `0 0 20px ${color}20`,
+      }}
     >
       <span
-        className="relative block h-full w-full text-md uppercase tracking-wide text-neutral-300 dark:font-light dark:text-[rgb(255,255,255,90%)]"
+        className="relative block h-full w-full text-md uppercase tracking-wide"
         style={{
+          color: color,
           maskImage:
-            "linear-gradient(-75deg,hsl(var(--primary)) calc(var(--x) + 20%),transparent calc(var(--x) + 30%),hsl(var(--primary)) calc(var(--x) + 100%))",
+            `linear-gradient(-75deg,${color} calc(var(--x) + 20%),transparent calc(var(--x) + 30%),${color} calc(var(--x) + 100%))`,
         }}
       >
         {text}
       </span>
       <span
+        className="absolute inset-0 z-10 block rounded-[inherit] p-px"
         style={{
           mask: "linear-gradient(rgb(0,0,0), rgb(0,0,0)) content-box,linear-gradient(rgb(0,0,0), rgb(0,0,0))",
           maskComposite: "exclude",
+          background: `linear-gradient(-75deg,${color}20 calc(var(--x)+20%),${color}50 calc(var(--x)+25%),${color}20 calc(var(--x)+100%))`,
         }}
-        className="absolute inset-0 z-10 block rounded-[inherit] bg-[linear-gradient(-75deg,hsl(var(--primary)/10%)_calc(var(--x)+20%),hsl(var(--primary)/50%)_calc(var(--x)+25%),hsl(var(--primary)/10%)_calc(var(--x)+100%))] p-px"
       ></span>
     </motion.button>
   );

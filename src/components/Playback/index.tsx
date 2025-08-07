@@ -7,7 +7,7 @@ export function Playback() {
     <div className="flex flex-col w-full items-center mt-[-100px] pb-20 bg-[#111213]">
       <Link href="https://lu.ma/qrthpr4l" target="_blank">
         <div className="mt-[-50px] mb-20 md:mt-[-100px]">
-          <ShinyButton text="Sign up now" />
+          <ShinyButton text="Sign up now" color="#FB723D" />
         </div>
       </Link>
       <div className="relative flex h-[300px] w-5/6 m-auto flex-col items-center justify-center overflow-hidden rounded-xl border bg-background md:shadow-xl mb-10 md:h-[700px]">
