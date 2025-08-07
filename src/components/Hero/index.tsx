@@ -26,8 +26,8 @@ const Hero = () => {
       <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-white to-gray-500 bg-clip-text text-center text-8xl font-bold leading-none text-transparent" style={{ fontFamily: 'Geller, sans-serif' }}>
         DEMO DAY
       </span>
-      <h2 className="mt-6 text-neutral-400 font-regular text-xl">
-        10th August 2025 | Taj, MG Road, Bangalore
+      <h2 className="mt-6 text-neutral-400 font-regular text-xl text-center px-4 break-words">
+        10th August 2025 | Taj MG Road, Bangalore
       </h2>
       {/* <BlurIn
         word="DEMO DAY"

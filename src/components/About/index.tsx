@@ -26,7 +26,7 @@ export function About() {
           What is The Demo Day?
         </p>
         <p className="font-regular text-gray-400 text-lg md:text-xl text-center mt-4 md:mt-6">
-          The most promising 14 early-stage startups pitch to India's top VCs and Angels <br className="hidden md:block" /> to grab an equity-less cash grant worth over 30 lakh rupees.
+          The most promising 13 early-stage startups pitch to India's top VCs and Angels <br className="hidden md:block" /> to grab an equity-less cash grant worth over 20 lakh rupees.
         </p>
         <div className="w-full mt-10 hidden md:block">
           <BlurFade delay={0.5} inView>
